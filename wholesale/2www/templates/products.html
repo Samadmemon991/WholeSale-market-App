@@ -1,0 +1,16 @@
+<ion-view view-title="Products">
+    <ion-content>
+        <div class="list">
+
+            <div class="item item-button-right" ng-repeat="product in products">
+              {{product.Product_name}} - Rs.{{product.Product_SPrice}}
+              <button ng-click="addToCart(product)" class="button button-positive">
+                <i class="icon ion-plus-round"></i>
+              </button>
+            </div>
+          
+          
+          </div>
+    </ion-content>
+  </ion-view>
+  

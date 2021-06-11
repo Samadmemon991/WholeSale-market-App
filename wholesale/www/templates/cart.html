@@ -1,0 +1,22 @@
+<ion-view view-title="Cart">
+        <ion-content>
+            <div class="list">
+    
+                <div class="item item-button-right" ng-repeat="product in products track by $index">
+                  {{product.Product_name}} - Rs.{{product.Product_SPrice}}
+                  <button ng-click="remove(product)" class="button button-assertive">
+                    <i class="icon ion-close"></i>
+                  </button>
+                </div>
+              
+              
+              </div>
+
+              Total: {{total}}
+
+              <button class="button button-full button-balanced" ng-click="placeOrder()">
+                    Place Order
+                  </button>
+        </ion-content>
+      </ion-view>
+      

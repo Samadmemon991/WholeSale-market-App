@@ -1,0 +1,42 @@
+<ion-view view-title="Home">
+    <ion-content>
+
+        <div class="row" ng-repeat="cat in cats" ng-if="$index % 3 == 0">
+            <div class="col cat-block">
+              <a href="#/products/{{cats[$index].CatId}}">
+                <img class="cat-image full-image" src="http://localhost/warehouse/images/{{cats[$index].image}}">
+
+                <div class="middle">
+                    <div class="text-wrapper">
+                      <div class="text">{{ cats[$index].CategoryName }}</div>
+                    </div>
+                  </div>
+              </a>
+            </div>
+            <div class="col cat-block">
+                <a href="#/products/{{cats[$index+1].CatId}}">
+              <img class="cat-image full-image" src="http://localhost/warehouse/images/{{cats[$index+1].image}}">
+              <div class="middle">
+                  <div class="text-wrapper">
+                    <div class="text">{{ cats[$index+1].CategoryName }}</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col cat-block">
+                <a href="#/products/{{cats[$index+2].CatId}}">
+              <img class="cat-image full-image" src="http://localhost/warehouse/images/{{cats[$index+2].image}}">
+              <div class="middle">
+                  <div class="text-wrapper">
+                    <div class="text">{{ cats[$index+2].CategoryName }}</div>
+                  </div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+            
+
+    </ion-content>
+  </ion-view>
+  

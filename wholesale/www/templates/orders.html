@@ -1,0 +1,20 @@
+<ion-view view-title="Orders">
+            <ion-content>
+                    <div class="list">
+                            <div ng-repeat="order in orders">
+                                <div class="item item-divider">
+                                Order ID: {{order.order.id}}
+                                </div>
+                            
+                                <a class="item" href="#" ng-repeat="product in order.products">
+                                {{product.Product_name}}
+                                </a>
+                          
+                            </div>
+
+                            
+                          
+                          </div>
+            </ion-content>
+          </ion-view>
+          
