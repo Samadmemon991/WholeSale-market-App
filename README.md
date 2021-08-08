@@ -1,4 +1,4 @@
-# WholeSale-martket-App
+# WholeSale-market-App
 A Cross Platform Ionic Powered WholeSale Market app
 
 **Requirements:**
